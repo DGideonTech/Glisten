@@ -1,0 +1,414 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.header {
+    width: 100%;
+    height: 100px;
+    background-color: white;
+    font-family: Montserrat, sans-serif;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 2% 6%;
+}
+
+nav img {
+    width: 50px;
+    height: 60px;
+    border-radius: 50px;
+    margin-bottom: 20px;
+}
+
+.navlinks ul {
+    list-style: none;
+    display: flex;
+}
+
+.navlinks ul li {
+    padding: 30px;
+}
+
+.navlinks ul li a {
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    text-transform: capitalize;
+}
+
+.hpage {
+    width: 95%;
+    margin: auto;
+    text-align: center;
+    padding-bottom: 50px;
+}
+
+.hpage img {
+    width: 100%;
+    height: 10%;
+}
+
+.hpage p {
+    font-size: 20px;
+    padding-top: 80px;
+    padding-bottom: 10px;
+    text-align: center;
+}
+
+.hpage h6 {
+    font-size: 40px;
+}
+
+.about {
+    width: 85%;
+    margin: auto;
+    text-align: center;
+    margin-bottom: 80px;
+}
+
+.about .row {
+    display: flex;
+    justify-content: space-between;
+    /*box-sizing: border-box;*/
+}
+
+.about-col {
+    flex-basis: 46%;
+    /* box-sizing: border-box;*/
+}
+
+.about hr {
+    margin-bottom: 80px;
+}
+
+.about p,
+h3 {
+    text-align: left;
+    /* margin-right: 60px;*/
+}
+
+.about p {
+    font-size: 16px;
+    color: gray;
+    font-weight: lighter;
+    line-height: 30px;
+}
+
+.about h3 {
+    font-size: 40px;
+    padding: 20px 0;
+    font-family: sans-serif;
+    font-weight: lighter;
+}
+
+
+
+/*.about-col a {
+    border: 1px solid black;
+    text-decoration: none;
+    background-color: black;
+    color: white;
+    text-transform: uppercase;
+    margin-left: -450px;
+    padding: 10px;
+}*/
+
+.about-col img {
+    width: 85%;
+}
+
+.team {
+    width: 85%;
+    margin: auto;
+    text-align: center;
+}
+
+.team .row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.team .team-col img {
+    width: 100%;
+}
+
+.team .team-col {
+    flex-basis: 36%;
+    box-sizing: border-box;
+}
+
+.team p,
+h3 {
+    text-align: left;
+    /* margin-right: 60px;*/
+}
+
+.team p {
+    font-size: 16px;
+    color: gray;
+    font-weight: lighter;
+    line-height: 30px;
+}
+
+.team h3 {
+    font-size: 40px;
+    padding: 20px 0;
+    font-family: sans-serif;
+    font-weight: lighter;
+}
+
+nav .fa {
+    display: none;
+}
+
+@media(max-width:700px) {
+    .navlinks ul {
+        display: block;
+    }
+
+    .navlinks {
+        background-color: white;
+        width: 100%;
+        z-index: 2;
+        position: fixed;
+        top: -200px;
+        right: 0;
+        height: 200px;
+        text-align: center;
+        margin: auto;
+        transition: 1s;
+    }
+
+    .navlinks ul li {
+        /*  padding-top: 1px;*/
+        margin-top: -50px;
+        padding-top: 40px;
+    }
+
+    .navlinks ul li a {
+        font-size: 16px;
+    }
+
+    nav .fa {
+        display: block;
+        text-align: right;
+        padding: 20px;
+        cursor: pointer;
+    }
+}
+
+/*-----------contact page------------*/
+
+.contacts {
+    width: 85%;
+    margin: auto;
+    padding-top: 100px;
+    text-align: center;
+    padding-bottom: 50px;
+}
+
+.contacts .row {
+    display: flex;
+    justify-content: space-between;
+    box-sizing: border-box;
+}
+
+.cont-col {
+    flex-basis: 40%;
+}
+
+.cont-col h4,
+div,
+a,
+p {
+    text-align: left;
+}
+
+.cont-col h4 {
+    font-size: 30px;
+    text-transform: capitalize;
+    padding-bottom: 20px;
+}
+
+.cont-col p {
+    line-height: 30px;
+}
+
+.cont-col div {
+    display: flex;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.cont-col .fa {
+    padding-right: 30px;
+    font-size: 20px;
+    color: red;
+}
+
+.cont-col div h5 {
+    font-size: 20px;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+
+.cont-col h5 {
+    color: gray;
+}
+
+.hero-btn {
+    border: 1px solid black;
+    padding: 5px 20px;
+    margin-top: 20px;
+    margin-left: 52px;
+    background-color: black;
+    outline: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.hero-btn a {
+    color: white;
+    text-decoration: none;
+}
+
+.hero-btn:hover {
+    background-color: white;
+    transition: 1s;
+}
+
+.hero-btn a:hover {
+    color: black;
+}
+
+.cont-col h2 {
+    font-size: 30px;
+    text-transform: capitalize;
+    padding-bottom: 15px;
+}
+
+.contact input,
+textarea {
+    width: 100%;
+    padding: 20px 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    outline: none;
+    border: 1px solid gray;
+    font-size: 15px;
+    text-transform: capitalize;
+}
+
+.footer {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding: 100px 0;
+}
+
+.fot {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.fot ul {
+    list-style: none;
+}
+
+.fot ul h4 {
+    font-size: 20px;
+    font-family: sans-serif;
+    padding-bottom: 20px;
+    text-transform: capitalize;
+    /* color: gray;*/
+    position: relative;
+}
+
+.fot ul h4::before {
+    content: '';
+    background-color: darkred;
+    width: 50%;
+    height: 2px;
+    position: absolute;
+    left: 0;
+    bottom: 16px;
+    margin: auto;
+    box-sizing: border-box;
+    transition: 0.5s;
+}
+
+.fot ul h4:hover::before {
+    width: 80%;
+}
+
+.fot ul li {
+    padding-top: 15px;
+    text-transform: capitalize;
+}
+
+.fot ul li a {
+    color: dimgray;
+    text-decoration: none;
+    font-weight: 500;
+    display: block;
+    transition: all 0.3s ease;
+}
+
+.fot ul li a:hover {
+    padding-left: 10px;
+    color: black;
+}
+
+.fot ul li:not(:last-child) {
+    margin-bottom: 10px;
+}
+
+@media(max-width:700px) {
+    .contacts .row {
+        display: block;
+    }
+
+    .cont-col h2 {
+        padding-top: 80px;
+    }
+
+    .fot {
+        display: block;
+        justify-content: space-between;
+    }
+
+    .fot ul {
+        padding-top: 20px;
+    }
+
+
+    .fot ul h4::before {
+        width: 10%;
+    }
+
+    .fot ul h4:hover::before {
+        width: 20%;
+    }
+
+    .footer {
+        padding-top: 50px;
+    }
+
+    .fot {
+        width: 100%;
+    }
+
+    .about h3 {
+        font-size: 30px;
+    }
+
+    .team h3 {
+        font-size: 25px;
+    }
+}
